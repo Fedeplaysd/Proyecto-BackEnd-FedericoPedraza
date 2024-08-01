@@ -1,0 +1,20 @@
+[
+  {
+    "title": "Guardapolvo Escolar",
+    "price": 890,
+    "description": "Guardapolvo escolar blanco para cursantes de primaria y secundaria.",
+    "stock": 560,
+    "category": "Escolar",
+    "code": "QLMS15",
+    "id": 0,
+    "status": true
+  },
+  {
+    "id": 1,
+    "status": true
+  },
+  {
+    "id": 2,
+    "status": true
+  }
+]

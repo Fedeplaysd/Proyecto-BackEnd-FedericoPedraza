@@ -1,0 +1,10 @@
+POST http://localhost:8080/api/products
+
+{
+  "title" : "Remera",
+  "price" : 1560 ,
+  "description" : "Remera blanca con estampado" ,
+  "code" : "QLAS15" ,
+  "stock" : 150 ,
+  "category" : "Remeras"
+}
