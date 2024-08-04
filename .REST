@@ -1,12 +1,9 @@
 POST http://localhost:8080/api/products
-{
-  "title" : "Remera",
-  "price" : 1560,
-  "description" : "Remera blanca con estampado",
-  "stock" : 150,
-  "category" : "Remeras",
-  "code" : "QLAS15",
-  "id" : 2,
-  "status" : true 
 
+{
+"title": "Remera",
+"price": 24234,
+"code": "AAQWE",
+"stock": 1555,
+"category": "Remera",
 }

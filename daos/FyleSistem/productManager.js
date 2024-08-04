@@ -26,14 +26,15 @@ class ProductManager {
 			!nuevoProducto.stock ||
 			!nuevoProducto.category
 		) {
-			console.log("Producto incompleto");
-			return "Producto incompleto";
+			/* console.log(nuevoProducto); */
+			return "producto incompleto";
+			/* return nuevoProducto; */
 			/* console.log(nuevoProducto); */
 		}
 
 		try {
 			const productos = await this.getProductos();
-			if (productos.length === 0) {
+			if (productos.length == 0) {
 				nuevoProducto.id = 1;
 				nuevoProducto.status = true;
 			} else {
