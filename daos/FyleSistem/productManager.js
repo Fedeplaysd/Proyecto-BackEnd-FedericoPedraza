@@ -17,7 +17,9 @@ class ProductManager {
 		}
 	};
 
-	addProducto = async nuevoProducto => {
+	//Logica anterior
+	/* addProducto = async nuevoProducto => {
+		console.log(nuevoProducto); //Agrege para ver que era el producto que llegaba
 		if (
 			!nuevoProducto.title ||
 			!nuevoProducto.description ||
@@ -26,29 +28,70 @@ class ProductManager {
 			!nuevoProducto.stock ||
 			!nuevoProducto.category
 		) {
-			/* console.log(nuevoProducto); */
-			return "producto incompleto";
-			/* return nuevoProducto; */
-			/* console.log(nuevoProducto); */
+			throw new Error("producto incompleto"); // Lanza el error
 		}
-
 		try {
 			const productos = await this.getProductos();
-			if (productos.length == 0) {
-				nuevoProducto.id = 1;
-				nuevoProducto.status = true;
-			} else {
-				nuevoProducto.id = productos[productos.length - 1].id + 1;
-				nuevoProducto.status = true;
-			}
+
+			nuevoProducto.id = productos.length
+				? productos[productos.length - 1].id + 1
+				: 1;
+
+			nuevoProducto.status = true;
+
 			productos.push(nuevoProducto);
+
 			await fs.promises.writeFile(
 				this.path,
 				JSON.stringify(productos, null, 2),
 				"utf-8",
 			);
+			console.log("Producto agregado:", nuevoProducto);
+			return nuevoProducto; // Retorna el producto agregado
 		} catch (error) {
-			console.log(error);
+			console.error("Error al agregar producto:", error);
+
+			throw error; // Re-lanza el error para manejo exterior }
+		}
+	};
+} */
+
+	//Logica nueva
+	addProducto = async nuevoProducto => {
+		console.log(nuevoProducto); //Agrege para ver que era el producto que llegaba
+		if (
+			nuevoProducto.title ||
+			nuevoProducto.description ||
+			nuevoProducto.price ||
+			nuevoProducto.code ||
+			nuevoProducto.stock ||
+			nuevoProducto.category
+		)
+			try {
+				const productos = await this.getProductos();
+
+				nuevoProducto.id = productos.length
+					? productos[productos.length - 1].id + 1
+					: 1;
+
+				nuevoProducto.status = true;
+
+				productos.push(nuevoProducto);
+
+				await fs.promises.writeFile(
+					this.path,
+					JSON.stringify(productos, null, 2),
+					"utf-8",
+				);
+				console.log("Producto agregado:", nuevoProducto);
+				return nuevoProducto; // Retorna el producto agregado
+			} catch (error) {
+				console.error("Error al agregar producto:", error);
+				throw error; // Re-lanza el error para manejo exterior }
+			}
+		else {
+			console.log(nuevoProducto);
+			throw new Error("producto incompleto");
 		}
 	};
 
@@ -130,5 +173,4 @@ class ProductManager {
 		}
 	};
 }
-
 module.exports = ProductManager;

@@ -1,9 +1,11 @@
-POST http://localhost:8080/api/products
+POST  http://localhost:8080/api/products
+Content-Type: application/json
 
 {
-"title": "Remera",
-"price": 24234,
-"code": "AAQWE",
-"stock": 1555,
-"category": "Remera",
+"title": "Pantalon",
+"description": "Jean color azul con efecto roto",
+"price": 350,
+"code": "QAVVSSD",
+"stock": 200,
+"category": "Pants"
 }

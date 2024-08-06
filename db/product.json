@@ -1,28 +1,42 @@
 [
-	{
-		"title": "Guardapolvo Escolar",
-		"price": 890,
-		"description": "Guardapolvo escolar blanco para cursantes de primaria y secundaria.",
-		"stock": 560,
-		"category": "Escolar",
-		"code": "QLMS15",
-		"id": 0,
-		"status": true
-	},
-	{
-		"id": 1,
-		"status": true
-	},
-	{
-		"id": 2,
-		"status": true
-	},
-	{
-		"id": 3,
-		"status": true
-	},
-	{
-		"id": 4,
-		"status": true
-	}
+  {
+    "title": "Guardapolvo Escolar",
+    "price": 890,
+    "description": "Guardapolvo escolar blanco para cursantes de primaria y secundaria.",
+    "stock": 560,
+    "category": "Escolar",
+    "code": "QLMS15",
+    "id": 0,
+    "status": true
+  },
+  {
+    "title": "Remera",
+    "description": "Rermere",
+    "price": 150,
+    "code": "QASD",
+    "stock": 350,
+    "category": "Remere",
+    "id": 6,
+    "status": true
+  },
+  {
+    "title": "Pantalon",
+    "description": "Jean color azul con efecto roto",
+    "price": 350,
+    "code": "QAVVSSD",
+    "stock": 200,
+    "category": "Pants",
+    "id": 7,
+    "status": true
+  },
+  {
+    "title": "Pantalon",
+    "description": "Jean color Negro con efecto roto",
+    "price": 350,
+    "code": "QAVVSSDASD",
+    "stock": 100,
+    "category": "Pants",
+    "id": 8,
+    "status": true
+  }
 ]
