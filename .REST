@@ -2,10 +2,10 @@ POST  http://localhost:8080/api/products
 Content-Type: application/json
 
 {
-"title": "Pantalon",
-"description": "Jean color azul con efecto roto",
+"title": "Remera Verde",
+"description": "color Verde con efecto roto",
 "price": 350,
-"code": "QAVVSSD",
-"stock": 200,
-"category": "Pants"
+"code": "QAVVSSDASD",
+"stock": 100,
+"category": "Remera"
 }

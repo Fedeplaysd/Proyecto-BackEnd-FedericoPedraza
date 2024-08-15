@@ -38,5 +38,55 @@
     "category": "Pants",
     "id": 8,
     "status": true
+  },
+  {
+    "title": "Pantalon",
+    "description": "Jean color Negro con efecto roto",
+    "price": 350,
+    "code": "QAVVSSDASD",
+    "stock": 100,
+    "category": "Pants",
+    "id": 9,
+    "status": true
+  },
+  {
+    "title": "Remera Negra",
+    "description": "color Negro con efecto roto",
+    "price": 350,
+    "code": "QAVVSSDASD",
+    "stock": 100,
+    "category": "Remera",
+    "id": 10,
+    "status": true
+  },
+  {
+    "title": "Remera Negra",
+    "description": "color Blanco con efecto roto",
+    "price": 350,
+    "code": "QAVVSSDASD",
+    "stock": 100,
+    "category": "Remera",
+    "id": 11,
+    "status": true
+  },
+  {
+    "title": "Remera Azul",
+    "description": "color Azul con efecto roto",
+    "price": 350,
+    "code": "QAVVSSDASD",
+    "stock": 100,
+    "category": "Remera",
+    "id": 12,
+    "status": true
+  },
+  {
+    "title": "Remera Verde",
+    "description": "color Verde con efecto roto",
+    "price": 350,
+    "code": "QAVVSSDASD",
+    "stock": 100,
+    "category": "Remera",
+    "id": 13,
+    "status": true
   }
 ]
